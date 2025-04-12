@@ -24,3 +24,11 @@ resource "aws_instance" "myec2" {
     Name = "Instance-Terraform-2-cloud"
   }
 }
+resource "aws_instance" "myec2-2" {
+  ami    = data.aws_ami.myami.id 
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "Instance-Terraform-3-cloud"
+  }
+}
