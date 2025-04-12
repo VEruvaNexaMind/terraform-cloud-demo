@@ -1,6 +1,6 @@
-resource "aws_vpc" "sl-vpc" {
+resource "aws_vpc" "sk-vpc" {
   cidr_block       = "10.0.0.0/16"
    tags = {
-    Name = "sl-vpc-05"
+    Name = "sk-vpc-05"
   }
 }
